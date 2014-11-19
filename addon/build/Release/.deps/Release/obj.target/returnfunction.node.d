@@ -1,0 +1,1 @@
+cmd_Release/obj.target/returnfunction.node := flock ./Release/linker.lock g++ -shared -pthread -rdynamic -m64  -Wl,-soname=returnfunction.node -o Release/obj.target/returnfunction.node -Wl,--start-group Release/obj.target/returnfunction/returnfunction.o -Wl,--end-group 

@@ -1,0 +1,1 @@
+cmd_Release/obj.target/wrapcreateobject.node := flock ./Release/linker.lock g++ -shared -pthread -rdynamic -m64  -Wl,-soname=wrapcreateobject.node -o Release/obj.target/wrapcreateobject.node -Wl,--start-group Release/obj.target/wrapcreateobject/wrapcreateobject.o -Wl,--end-group 
